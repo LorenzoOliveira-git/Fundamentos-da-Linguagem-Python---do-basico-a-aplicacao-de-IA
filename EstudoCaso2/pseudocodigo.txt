@@ -1,0 +1,17 @@
+Ideia para o jogo de pedra, papel tesoura.
+
+O jogo consiste em duas pessoas escolhendo entre pedra, papel e tesoura. A pedra ganha da tesoura, a tesoura ganhar do papel e o papel ganha da pedra. O objetivo do jogo é uma pessoa fazer a escolha que derrota a outra do adversário.
+
+Vamos implementar isso em python primeiro com o pseudocódigo, para entender a lógica por trás desse jogo.
+
+#INICIO
+    #MOSTRAR a regra do jogo
+    
+    #LER a jogada do primeiro adversário
+    #LER a jogada do segundo adversário
+
+    #VALIDAR se a entrada de ambos os usuários está correta
+
+    #VERIFICAÇÃO lógica para dizer quem ganhou a partida
+    #MOSTRAR o vencedor na tela
+#FIM
