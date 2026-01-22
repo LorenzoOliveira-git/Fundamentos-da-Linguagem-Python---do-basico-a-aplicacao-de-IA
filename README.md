@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 O que é isso?
+## 📌 O que é esse repositório?
 Repositório destinado ao estudo da linguagem **Python**, abrangendo desde conceitos teóricos até **casos práticos de negócio**. Aqui você encontrará conteúdos que vão desde fundamentos básicos da linguagem, como inicialização de variáveis, até **projetos reais de Análise e Ciência de Dados**.
 
 ---

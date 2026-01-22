@@ -69,17 +69,14 @@ def gerar_dados_ficticios(num_registros = 600):
 df_vendas = gerar_dados_ficticios(500)
 
 #----------------------------------------------------
-#%%
 #LIMPEZA, PRÉ-PROCESSAMENTO E ENGENHARIA DE ATRIBUTOS
 
 #CASO 1:
 #Se a coluna 'Data_Pedido' não estiver como datatime, precimos fazer a conversão explícita
-#%%
 df_vendas.dtypes
-#%%
+
 df_vendas["Data_Pedido"] = pd.to_datetime(df_vendas['Data_Pedido'])
 df_vendas.dtypes
-#%%
 
 #CASO 2:
 #Engenharia de atributos - tem por objetivo transformar os dados inplicitos em explicitos para melhor performance de análise
@@ -87,17 +84,14 @@ df_vendas.dtypes
 df_vendas['Faturamento'] = df_vendas["Quantidade"] * df_vendas["Preco_Unitario"]
 df_vendas.head()
 
-#%%
 #CASO 3:
 #Engenharia de atributos
 #Vamos criar uma nova coluna que indica o tempo de velocidade da entrega com base na cidade em que a venda foi efetuada.
 df_vendas["Status_Entrega"] = df_vendas["Estado"].map(lambda estado: "Rápido" if estado in ["SP","RJ","MG"] else "Normal")
 df_vendas.head()
-#%%
 
 #----------------------------------------------------
 
-#%%
 #ANÁLISE 1
 
 #Top 10 produtos mais vendidos
@@ -114,10 +108,9 @@ plt.title('Top 10 Produtos Mais Vendidos',fontsize=12)
 plt.xlabel('Quantidade Vendida',fontsize=12)
 plt.ylabel('Produto',fontsize=12)
 
-plt.savefig("analise_vendas")
+plt.savefig("imagens/analise_vendas")
 plt.show()
 
-#%%
 
 #ANÁLISE 2
 
@@ -151,10 +144,9 @@ plt.xticks(rotation=45)
 plt.grid(True, which="both", linestyle="--",linewidth=0.5)
 
 plt.tight_layout()
-plt.savefig("Faturamento_Mensal")
+plt.savefig("imagens/faturamento_mensal")
 plt.show()
 
-#%%
 
 #ANÁLISE 3
 
@@ -179,10 +171,9 @@ plt.ylabel("Faturamento (R$)",fontsize=12)
 
 plt.tight_layout()
 
-plt.savefig("Vendas por Estado")
+plt.savefig("imagens/vendas_estados")
 plt.show()
 
-#%%
 
 #ANÁLISE 4
 
@@ -216,7 +207,7 @@ plt.xticks(rotation=45, ha="right")
 
 plt.tight_layout()
 
-plt.savefig("Faturamento_Categoria")
+plt.savefig("imagens/faturamento_categoria")
 plt.show()
 
 # %%
