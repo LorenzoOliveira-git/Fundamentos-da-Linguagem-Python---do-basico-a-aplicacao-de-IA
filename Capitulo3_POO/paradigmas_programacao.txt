@@ -1,0 +1,69 @@
+Dentro da programação temos muitos "paradigmas" ou se preferir, jeitos de construir uma aplicação. Nesse documentos você encontrará as principais delas, com explicações teóricas e exemplos do mundo real para associação.
+
+----------------------------------------------------------------------------------------------
+Programação Imperativa:
+
+Esse paradigma é um dos mais antigos e diretos. O foco está em como resolver um problema desenvolvendo a programação para dar "ordens" à máquina.
+
+Conceito-chave: Comandos sequenciais que alteram o estado do programa.
+
+Analogia: Um bolo de receita, onde você segue a risca cada passo em uma ordem específica:  "bata os ovos", "adicione a farinha", "asse por 30 minutos".
+
+Subparadigmas comuns:
+Programação Estruturada: programação que usa estruturas de controle como laços (for, while) e condicionais (if, else) para evitar saltos desordenados no código.
+
+Linguagens Típicas:
+C, Pascal, Fortran, Assembly.
+
+----------------------------------------------------------------------------------------------
+Programação Declarativa:
+
+Em oposição a programação imperativa, esse paradigma foca em dizer o que o programa deve fazer, sem detalhar como fazer. O programador descreve a lógica e o resultado esperado, e a própria linguagem de programação se encarrega de encontrar a melhor maneira de alcança-lo.
+
+Conceito-chave: Descrever o resultado esperado, não o processo.
+
+Analogia: Pedir a um artista para pintar "uma paisagem de um pôr do sol na praia", em vez de dar instruções como "pegue o pincel X, use a cor Y no ponto Z da tela".
+
+Subparadigmas comuns:
+Programação funcional: será explicado mais a frente
+Programação lógica: Baseada em lógica formal, onde o programa é uma série de fatos e regras. É muito usada em IA e sistemas especialistas.
+
+Linguagens Típicas: SQL (para banco de dados), HTML (para estrutura de páginas web), Prolog (lógica)
+
+----------------------------------------------------------------------------------------------
+Programação Orientada a Objetos (POO)
+
+Este paradigma separa o código em "objetos", que são instâncias de "classes". Um objeto agrupa dados (atributos) e os comportamentos (métodos) que operam sobre os dados. A ideia é modelar o mundo real de forma mais intuitiva.
+
+Conceitos-chave:
+- Classe: Um molde ou planta para criar objetos (ex: a classe Carro);
+- Objeto: Uma instância de uma classe (ex: meu fusca, um objeto da classe Carro);
+- Encapsulamento: Agrupar dados e método dentro de um objeto, protegendo os dados de acesso externo indevido;
+- Herança: Permitir que uma classe (filha) herde atributos e métodos de outra classe (mãe), promovendo o reuso do código.
+- Polimorfismo: Permitir que objetos de diferentes classes respondam à mesma mensagem (chamada de método) de maneiras específicas.
+
+Linguagens típicas: Java, C++, Python, C#, Ruby, Smalltalk.
+
+----------------------------------------------------------------------------------------------
+Programação Funcional (FP)
+
+É  um  subparadigma  do  estilo  declarativo.  Trata  a  computação  como  a  avaliação  de funções matemáticas e evita estados mutáveis e dados compartilhados. As funções são tratadas como  cidadãs  de  primeira  classe,  o  que  significa  que  podem  ser  passadas  como  argumentos, retornadas de outras funções e atribuídas a variáveis.
+
+Conceitos-chave:
+- Funções  Puras:  Para  uma  mesma  entrada,  sempre  produzem  a  mesma  saída  e  não têm efeitos colaterais observáveis (não alteram variáveis fora de seu escopo).
+- Imutabilidade:  Os  dados  não  podem  ser  alterados  após  sua  criação.  Em  vez  de modificar uma estrutura de dados, o programa cria uma nova.
+- Composição  de  Funções:  Construir  funções  complexas  combinando  funções  mais simples.Linguagens  Típicas:  Haskell,  Lisp,  Clojure,  F#.  
+
+Muitas  linguagens  multiparadigma,  como Python, JavaScript e C#, incorporaram fortemente os conceitos funcionais.
+
+----------------------------------------------------------------------------------------------
+Outros paradigmas relevantes
+
+Programação  Orientada  a  Eventos:  O  fluxo  do  programa  é  determinado  por  eventos, como  ações  do  usuário  (cliques,  teclas  pressionadas),  mensagens  de  outros  programas  ou leituras de sensores. Muito comum em interfaces gráficas (GUIs) e aplicações web.
+
+Linguagens: JavaScript (em navegadores), C# (em interfaces Windows Forms ou WPF).
+
+Programação Concorrente: Lida com a execução de múltiplas sequências de instruções ao mesmo  tempo.  Essencial  para  sistemas  multi-core  e  aplicações  que  precisam  realizar  várias tarefas  simultaneamente  (ex:  baixar  um  arquivo  enquanto  a  interface  do  usuário  continua responsiva).
+
+Linguagens: Go, Erlang, Rust, Java (com suas bibliotecas de threads).
+

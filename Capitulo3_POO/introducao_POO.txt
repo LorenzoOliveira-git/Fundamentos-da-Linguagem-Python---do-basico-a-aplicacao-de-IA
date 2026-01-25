@@ -1,0 +1,5 @@
+1. Introdução à Programação Orientada a Objetos (POO)
+
+A POO é um paradigma de programação que organiza o código em torno de "objetos", que podem conter tanto dados (atributos) quanto ações (métodos). Pense em um objeto como uma representação de algo do mundo real, como um carro, uma pessoa ou uma conta bancária. Isso ajuda a estruturar programas complexos de forma mais lógica e reutilizável.
+
+Praticamente todos os algoritmos de Machine Learning e IA são criados com POO. Quase todas as bibliotecas usadas em tarefas de Ciência de Dados (Análise de Dados, Análise Estatística, Engenharia de Dados) são criadas usando POO.
